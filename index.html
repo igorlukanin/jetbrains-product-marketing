@@ -37,7 +37,7 @@
             background-color: #fd3;
         }
 
-        .agenda, .qna {
+        .qna {
             background-color: #fe9;
         }
     </style>
@@ -48,7 +48,7 @@
     <h1>Product Marketing at JetBrains</h1>
 
     <p>A talk by <a href="https://twitter.com/igorlukanin" target="_blank">Igor Lukanin</a> at <a href="http://kontur.ru" target="_blank">SKB Kontur</a></p>
-    <p>Inspired by and heavily based on <a href="http://megamozg.ru/company/JetBrains/blog/17048/" target="_blank">JetBrains PMM School</a></p>
+    <p>Inspired by and heavily based on <a href="#pmm-school">JetBrains PMM School</a></p>
 
     <style>
         .caption {
@@ -63,25 +63,43 @@
         .caption p {
             line-height: 1.5em;
         }
+
+        .caption a {
+            background: linear-gradient(to top, currentColor, currentColor .09em, transparent .09em, transparent)repeat-x;
+        }
     </style>
 </header>
 
 <section class="slide shout" id="me">
     <div>
-        <h2>About me</h2>
+        <h2>About me <br><span class="subtitle">Igor Lukanin</span><span class="subtitle-2">Product manager at SKB Kontur<br>Never studied marketing at university</span></h2>
     </div>
+    <style>
+        #me h2 .subtitle {
+            display: block;
+            font-size: .5em;
+            margin-top: 1em;
+        }
+        #me h2 .subtitle-2 {
+            display: block;
+            font-size: .25em;
+            line-height: 1.5em;
+            margin-top: 1em;
+        }
+    </style>
 </section>
 
 <section class="slide cover" id="samuel">
     <div>
         <img src="pictures/samuel.jpg">
-        <h2>English, marketeer! <br>Do you speak it?</h2>
+        <h2>— English, marketeer! <br>Do you speak it?</h2>
     </div>
     <style>
         #samuel h2 {
             color: #eee;
             line-height: 1.25em;
             margin-top: -0.125em;
+            text-indent: -.8em;
         }
     </style>
 </section>
@@ -98,13 +116,47 @@
     </div>
 </section>
 
+<section class="slide cover" id="we">
+    <div>
+        <h2>August 2, 2015 at JetBrains</h2>
+        <img src="pictures/we.jpg">
+    </div>
+    <style>
+        #we h2 {
+            color: #333;
+        }
+    </style>
+</section>
+
+<section class="slide lurkmore" id="pmm-school">
+    <div>
+        <h2>Lurk More</h2>
+        <p><a href="http://megamozg.ru/company/JetBrains/blog/15794/" target="_blank">Looking for unicorns: PMMs at JetBrains</a> by <a href="https://twitter.com/abreslav" target="_blank">Andrey Breslav</a></p>
+        <p><a href="http://megamozg.ru/company/JetBrains/blog/17048/" target="_blank">Product marketing school & internship at JetBrains</a> by <a href="https://twitter.com/mikhail_vink" target="_blank">Mikhail Vink</a></p>
+        <p><a href="http://geektimes.ru/post/259848/" target="_blank">How to attend a marketing school & still be a geek</a> by <a href="https://twitter.com/paullarionov" target="_blank">Paul Larionov</a></p>
+        <p><span class="fa fa-youtube-play"></span><a href="http://megamozg.ru/company/JetBrains/blog/19882/" target="_blank">Recordings of the product marketing school at JetBrains</a> by Mikhail Vink</p>
+    </div>
+</section>
+
 <section class="slide shout" id="you">
     <div>
-        <h2>About you<br><span class="subtitle">Name, Education & Role</span></h2>
+        <h2>About you<br><span class="subtitle">Name, Role & Education</span></h2>
     </div>
     <style>
         #you h2 .subtitle {
             font-size: .5em;
+        }
+    </style>
+</section>
+
+<section class="slide cover" id="kontur">
+    <div>
+        <h2>October 13, 2015 at SKB Kontur</h2>
+        <img src="pictures/kontur.jpg">
+    </div>
+    <style>
+        #kontur h2 {
+            color: #eee;
         }
     </style>
 </section>
@@ -134,20 +186,20 @@
     </div>
 </section>
 
-<section class="slide agenda">
+<section class="slide">
     <div>
         <h2>Agenda</h2>
         <ol>
-            <li>Product marketing managers at JetBrains</li>
-            <li>Strategic product management</li>
-            <li>Operational product management</li>
-            <li>Contemporary сase study</li>
+            <li><a href="#part-1">Product marketing managers at JetBrains</a></li>
+            <li><a href="#part-2">Strategic product management</a></li>
+            <li><a href="#part-3">Operational product management</a></li>
+            <li><a href="#part-4">Contemporary case study</a></li>
         </ol>
-        <p>Q & A sessions, coffee breaks, and a home assignment.</p>
+        <p>Q & A sessions, coffee breaks, and a <a href="#ha">home assignment</a></p></p>
     </div>
 </section>
 
-<section class="slide shout part">
+<section class="slide shout part" id="part-1">
     <div>
         <h2>#1. PMMs at&nbsp;JetBrains</h2>
     </div>
@@ -201,7 +253,8 @@
         <ul>
             <li>IntelliJ IDEA: 33 % of <a href="http://zeroturnaround.com/rebellabs/java-tools-and-technologies-landscape-for-2014/6/" target="_blank">Java IDE market</a></li>
             <li>ReSharper: 600k downloads in <a href="https://visualstudiogallery.msdn.microsoft.com/EA4AC039-1B5C-4D11-804E-9BEDE2E63ECF?SRC=Featured" target="_blank">MS VS Gallery</a></li>
-            <li>Android Studio: official IDE for Android, based on IntelliJ IDEA</li>
+            <li>PhpStorm: the best <a href="http://www.sitepoint.com/best-php-ide-2014-survey-results/" target="_blank">PHP IDE of 2014</a></li>
+            <li>Android Studio: the <a href="http://developer.android.com/tools/studio/index.html" target="_blank">official IDE</a> for Android, based on IntelliJ IDEA</li>
         </ul>
     </div>
 </section>
@@ -361,13 +414,13 @@
 <section class="slide cover" id="bjarne">
     <div>
         <img src="pictures/bjarne.png">
-        <h2>Know <br>this <br>man?</h2>
+        <h2>Know <br>this man?</h2>
     </div>
     <style>
         #bjarne h2 {
             color: #eee;
             position: absolute;
-            right: 2em;
+            right: 1.25em;
         }
     </style>
 </section>
@@ -486,7 +539,7 @@
                 <li>Internet marketing</li>
                 <li>Email marketing</li>
                 <li>Research</li>
-                <li>Developer Advocacy</li>
+                <li><a href="https://twitter.com/mariakhalusova/status/628493508119236608" target="_blank">Developer Advocacy</a></li>
                 <li>Web Development</li>
                 <li>Internal Development</li>
             </ul>
@@ -514,7 +567,7 @@
     </div>
 </section>
 
-<section class="slide shout part">
+<section class="slide shout part" id="part-2">
     <div>
         <h2>#2. Strategic product management</h2>
     </div>
@@ -735,7 +788,7 @@
 
 <section class="slide shout">
     <div>
-        <h2>CLTV =<br>ARPU ÷ RR</h2>
+        <h2>CLTV =<br>ARPU ÷ CR</h2>
     </div>
 </section>
 
@@ -834,6 +887,8 @@
         <h2>Lurk More</h2>
         <p><span class="fa fa-youtube-play"></span><a href="http://www.youtube.com/watch?v=emc2NBVm_xY" target="_blank">Working with community...</a> (w/ <a href="https://github.com/igorlukanin/jetbrains_pmm_school/blob/master/lectures/04%20Working%20with%20community%20and%20business%20development%2C%20Mikhail%20Vink.pdf" target="_blank">slides</a>) by <a href="https://twitter.com/mikhail_vink" target="_blank">Mikhail Vink</a></p>
         <p><a href="https://docs.google.com/document/d/1tgOSglSc7LqZYcFF5_Fq66xMJ1w6DOoCrXIp2Xp4kTA/edit?usp=sharing" target="_blank">Home Assignment 1: Community Development for Kotlin</a> by Igor Lukanin</p>
+        <p><span class="fa fa-book"></span><a href="http://cdn.oreillystatic.com/oreilly/booksamplers/9781491919019_sampler.pdf" target="_blank">Badass: Making Users Awesome</a> by Kathy Sierra</p>
+        <p><a href="https://econsultancy.com/blog/65752-klm-we-make-25m-per-year-from-social-media/" target="_blank">KLM: We Make $ 25kk per Year from Social Media</a></p>
     </div>
 </section>
 
@@ -843,7 +898,7 @@
     </div>
 </section>
 
-<section class="slide shout part">
+<section class="slide shout part" id="part-3">
     <div>
         <h2>#3. Operational product management</h2>
     </div>
@@ -897,6 +952,12 @@
     </div>
 </section>
 
+<section class="slide shout cover">
+    <div>
+        <img src="pictures/eclipse.jpg">
+    </div>
+</section>
+
 <section class="slide">
     <div>
         <h2>Marketing Channels</h2>
@@ -910,17 +971,22 @@
 <section class="slide">
     <div>
         <h2>Organic Channels</h2>
-        <ol>
-            <li>Direct</li>
-            <li>Organic search</li>
-            <li>Social media</li>
-            <li>Application stores</li>
-        </ol>
-        <ul>
-            <li>Limited costs (organic ≠ free) & unlimited potential income</li>
-            <li>No direct control</li>
-            <li>Long term results</li>
-        </ul>
+        <div class="column">
+            <ol>
+                <li>Direct</li>
+                <li>Organic search</li>
+                <li>Social media</li>
+                <li>Application stores</li>
+            </ol>
+        </div>
+        <div class="column">
+            <ul>
+                <li>Limited costs: organic ≠ free</li>
+                <li>Unlimited potential income</li>
+                <li>No direct control</li>
+                <li>Long term results</li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -991,12 +1057,12 @@
 <section class="slide">
     <div>
         <h2>Keywords Data Sources</h2>
-        <ol>
+        <ul>
             <li>Google AdWords keywords planner</li>
             <li>Websites of competitors</li>
             <li>Search engine autosuggest</li>
             <li>Historical data (e.g., logs)</li>
-        </ol>
+        </ul>
     </div>
 </section>
 
@@ -1230,6 +1296,12 @@
     </div>
 </section>
 
+<section class="slide cover">
+    <div>
+        <img src="pictures/swift.png">
+    </div>
+</section>
+
 <section class="slide">
     <div>
         <h2>CRO 101</h2>
@@ -1245,7 +1317,7 @@
 
 <section class="slide cover" id="starwars-4">
     <div>
-        <h2>— Use pair metrics,<br>Luke</h2>
+        <h2>— Use coupled<br>metrics, Luke</h2>
         <img src="pictures/starwars.jpg">
     </div>
     <style>
@@ -1267,6 +1339,16 @@
         <p><span class="fa fa-youtube-play"></span><a href="http://www.youtube.com/watch?v=roXxKjvDjl0" target="_blank">Website & CRO Overview</a> (w/ <a href="https://github.com/igorlukanin/jetbrains_pmm_school/blob/master/lectures/09%20Website%20and%20CRO%20overview%2C%20Vladimir%20Sitnikov.pdf" target="_blank">slides</a>) by <a href="https://twitter.com/de4e" target="_blank">Vladimir Sitnikov</a></p>
         <p><span class="fa fa-youtube-play"></span><a href="http://www.youtube.com/watch?v=UeLLZ3KJ5hw" target="_blank">Analytics Framaworks, Tips & Tricks</a> (w/ <a href="https://github.com/igorlukanin/jetbrains_pmm_school/blob/master/lectures/11%20Analytics%20frameworks%2C%20tools%20and%20tips%2C%20Vladimir%20Sitnikov.pdf" target="_blank">slides</a>) by <a href="https://twitter.com/de4e" target="_blank">Vladimir Sitnikov</a></p>
         <p><a href="https://docs.google.com/document/d/1Kiukvp62c4OrVD3YXuX8oEUrk4Fbrt7m0Jv_mBZXuTQ/edit?usp=sharing" target="_blank">Home Assignment 2: Decision-making Process</a> by Igor Lukanin</p>
+        <p><span class="fa fa-wrench"></span><a href="https://www.thinkwithgoogle.com/tools/customer-journey-to-online-purchase.html" target="_blank">The Customer Journey to Online Purchase</a> by Think with Google</p>
+        <p><span class="fa fa-wrench"></span><a href="http://ubersuggest.org" target="_blank">Ubersuggest</a> as a Keyword Data Source</p>
+    </div>
+</section>
+
+<section class="slide lurkmore">
+    <div>
+        <h2>Lurk More</h2>
+        <p><span class="fa fa-youtube-play"></span><a href="https://clip.mn/embed/yt-n_yHZ_vKjno?th=dark&pr=F06531&ap=1&pid=yc&ch=1" target="_blank">Growth</a> by <a href="https://twitter.com/alexschultz" target="_blank">Alex Schultz</a></p>
+        <p><span class="fa fa-youtube-play"></span><a href="https://clip.mn/embed/yt-sz_LgBAGYyo?th=dark&pr=F06531&ap=1&pid=yc&ch=1" target="_blank">How to Build Products Users Love</a> by <a href="https://twitter.com/ilikevests" target="_blank">Kevin Hale</a></p>
     </div>
 </section>
 
@@ -1310,7 +1392,7 @@
                 Successful:
                 <li>Personal coupon offers</li>
                 <li>Conference follow-ups</li>
-                <li>„C/C++ facts“ research <i>(remember it?)</i></li>
+                <li>„C/C++ facts“ research</li>
                 <li>Lead nurturing</li>
             </ul>
         </div>
@@ -1345,7 +1427,7 @@
         <h2>Lurk More</h2>
         <p><span class="fa fa-youtube-play"></span><a href="http://www.youtube.com/watch?v=MCrzQzayHoE" target="_blank">Email Marketing</a> (w/ <a href="https://github.com/igorlukanin/jetbrains_pmm_school/blob/master/lectures/12%20Email%20marketing%2C%20Vladislava%20Prasolova.pdf" target="_blank">slides</a>) by <a href="https://twitter.com/V_LadySlava" target="_blank">Vladislava Prasolova</a></p>
         <p><a href="https://docs.google.com/document/d/1nEra43EU7hfeLXiHfMzoFt7v4oUIbqYod3FVUfS8fxU/edit?usp=sharing" target="_blank">Home Assignment 4: Email Marketing</a> by Igor Lukanin</p>
-        <p><a href="http://www.marketo.com" target="_blank">Marketo</a> for marketing automation</p>
+        <p><span class="fa fa-wrench"></span><a href="http://www.marketo.com" target="_blank">Marketo</a> for marketing automation</p>
     </div>
 </section>
 
@@ -1382,7 +1464,7 @@
     </div>
 </section>
 
-<section class="slide">
+<section class="slide" id="facts">
     <div>
         <h2>Fact Extraction Process</h2>
         <ol>
@@ -1434,8 +1516,9 @@
         <p><span class="fa fa-youtube-play"></span><a href="http://www.youtube.com/watch?v=ODs3pzUsAVU" target="_blank">Fact-based Decision-making</a> (w/ <a href="https://github.com/igorlukanin/jetbrains_pmm_school/blob/master/lectures/05%20Hypothesis-driven%20decision-making%20process%2C%20Andrey%20Cheptsov.pdf" target="_blank">slides</a>) by <a href="https://twitter.com/andrey_cheptsov" target="_blank">Andrey Cheptsov</a></p>
         <p><span class="fa fa-youtube-play"></span><a href="http://www.youtube.com/watch?t=72&v=XyP3S_c6VpY" target="_blank">Product Analytics & Research Methods</a> (w/ <a href="https://github.com/igorlukanin/jetbrains_pmm_school/blob/master/lectures/14%20Product%20analytics%20and%20research%20methods%2C%20Maria%20Antropova.pdf" target="_blank">slides</a>) by <a href="https://twitter.com/Pani_Mariza" target="_blank">Maria Antropova</a></p>
         <p><span class="fa fa-youtube-play"></span><a href="http://www.youtube.com/watch?v=AferRWsleQo" target="_blank">Surveys</a> (w/ <a href="https://github.com/igorlukanin/jetbrains_pmm_school/blob/master/lectures/14%20Product%20analytics%20and%20research%20methods%2C%20Anastasia%20Chumak.pdf" target="_blank">slides</a>) by <a href="https://twitter.com/chumak_a" target="_blank">Anastasia Chumak</a></p>
-        <p><a href="https://docs.google.com/document/d/1enqeL85D7QEsO8nqJPE1Bz9l4HZ2HQGX-lMb5jPqa1U/edit?pli=1#heading=h.ytjcaigh2iov" target="_blank">Home Assignment 5: Product Analytics</a> by Igor Lukanin</p>
-        <p><a href="https://www.surveygizmo.com" target="_blank">SurveyGizmo</a>, <a href="https://www.statwing.com" target="_blank">Statwing</a> and <a href="http://www.quicktapsurvey.com" target="_blank">QuickTapSurvey</a> for survey automation</p>
+        <p><a href="https://docs.google.com/document/d/1enqeL85D7QEsO8nqJPE1Bz9l4HZ2HQGX-lMb5jPqa1U/edit?usp=sharing" target="_blank">Home Assignment 5: Product Analytics</a> by Igor Lukanin</p>
+        <p><span class="fa fa-wrench"></span><a href="https://www.surveygizmo.com" target="_blank">SurveyGizmo</a>, <a href="https://www.statwing.com" target="_blank">Statwing</a> and <a href="http://www.quicktapsurvey.com" target="_blank">QuickTapSurvey</a> for survey automation</p>
+        <p><span class="fa fa-youtube-play"></span><a href="http://msk14.agiledays.ru/members/profile/269/#report-50" target="_blank">Analytics for Product Evolution</a> by Eugene Kuryshev</p>
     </div>
 </section>
 
@@ -1445,7 +1528,7 @@
     </div>
 </section>
 
-<section class="slide shout part">
+<section class="slide shout part" id="part-4">
     <div>
         <h2>#4. Case study</h2>
     </div>
@@ -1453,16 +1536,107 @@
 
 <section class="slide shout">
     <div>
-        <h2>JetBrains<br>Toolbox</h2>
+        <h2>JetBrains<br><a href="https://www.jetbrains.com/toolbox/" target="_blank">Toolbox</a></h2>
     </div>
 </section>
 
-<section class="slide qna" id="contact">
+<section class="slide">
     <div>
-        <h2>Fin</h2>
-        <p>Contact me: <a href="mailto:lukanin@kontur.ru" target="_blank">lukanin@kontur.ru</a><br>Follow me: <a href="https://twitter.com/igorlukanin" target="_blank">@igorlukanin</a></br>
+        <h2>Part 1: September 3, 2015</h2>
+        <p><a href="http://blog.jetbrains.com/blog/2015/09/03/introducing-jetbrains-toolbox/" target="_blank">Introducing JetBrains Toolbox</a> by <a href="https://twitter.com/topka" target="_blank">Eugene Toporov</a></p>
+        <ul>
+            Reactions:
+            <li><a href="https://news.ycombinator.com/item?id=10165334" target="_blank">Hacker News</a>, <a href="https://www.reddit.com/r/programming/comments/3ji148/jetbrains_toolbox_monthly_yearly_subscription_for/" target="_blank">Reddit</a> & <a href="http://habrahabr.ru/post/266547/" target="_blank">Habrahabr</a></li>
+            <li><a href="http://ilikekillnerds.com/2015/09/my-thoughts-on-jetbrains-toolbox-saas-moneygrab/" target="_blank">Dwayne Charrington</a>, <a href="https://haskovec.com/2015/09/13/the-jetbrains-fiasco/" target="_blank">Jeffrey Haskovec</a> & <a href="http://blog.dmitryleskov.com/business-of-software/what-microsoft-got-right-that-jetbrains-didnt/" target="_blank">Dmitry Leskov</a></li>
+        </ul>
     </div>
 </section>
+
+<section class="slide">
+    <div>
+        <h2>Part 2: September 4, 2015</h2>
+        <p><a href="http://blog.jetbrains.com/blog/2015/09/04/we-are-listening/" target="_blank">We are listening</a> by <a href="https://twitter.com/topka" target="_blank">Eugene Toporov</a></p>
+    </div>
+</section>
+
+<section class="slide shout" id="wal">
+    <div>
+        <h2>We are<br>listening</h2>
+    </div>
+
+    <style>
+        #wal h2 {
+            text-shadow: 0 0 .25em #fd3;
+        }
+    </style>
+</section>
+
+<section class="slide">
+    <div>
+        <h2>Part 3: September 18, 2015</h2>
+        <p><a href="http://blog.jetbrains.com/blog/2015/09/18/final-update-on-the-jetbrains-toolbox-announcement/" target="_blank">Final update on the JetBrains Toolbox announcement</a> by <a href="https://twitter.com/mshafirov" target="_blank">Maxim Shafirov</a></p>
+        <ul>
+            Reactions:
+            <li><a href="https://news.ycombinator.com/item?id=10278285" target="_blank">Hacker News</a>, <a href="https://www.reddit.com/r/programming/comments/3mce6k/final_update_on_the_jetbrains_toolbox_announcement/?" target="_blank">Reddit</a> & <a href="http://habrahabr.ru/company/JetBrains/blog/267193/" target="_blank">Habrahabr</a></li>
+            <li><a href="http://claravanstaden.com/index.php/2015/09/06/jetbrains-subscription-fallout/" target="_blank">Clara van Staden</a> & <a href="https://mchernyavska.wordpress.com/2015/09/24/jetbrains-impending-subscriptions-an-update/" target="_blank">Maryna Cherniavska</a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="slide shout part" id="ha">
+    <div>
+        <h2>Home<br>Assignment</h2>
+    </div>
+</section>
+
+<section class="slide">
+    <div>
+        <h2>Let's Apply</h2>
+        <ol>
+            <li>Choose a product of <a href="https://kontur.ru/products#all" target="_blank">SKB Kontur</a></li>
+            <li>Imagine you are a PMM of this product</li>
+            <li>Propose one <a href="#part-2">strategic</a> and one <a href="#part-3">operational</a> change to its marketing</li>
+            <li>Make hypotheses about the effect of each change</li>
+            <li>Find ways to prove them with <a href="#facts">facts</a></li>
+        </ol>
+    </div>
+</section>
+
+<section class="slide lurkmore">
+    <div>
+        <h2>Lurk More</h2>
+        <p>Solution examples by Igor Lukanin:</p>
+        <p><a href="https://docs.google.com/document/d/1tgOSglSc7LqZYcFF5_Fq66xMJ1w6DOoCrXIp2Xp4kTA/edit?usp=sharing" target="_blank">Home Assignment 1: Community Development for Kotlin</a></p>
+        <p><a href="https://docs.google.com/document/d/1Kiukvp62c4OrVD3YXuX8oEUrk4Fbrt7m0Jv_mBZXuTQ/edit?usp=sharing" target="_blank">Home Assignment 2: Decision-making Process</a></p>
+        <p><a href="https://docs.google.com/document/d/1FBG8TTBmyYKf-2PTjEr5c2JM6j4m9WWoLTtTiw_McFg/edit?usp=sharing" target="_blank">Home Assignment 3: Product Pricing</a></p>
+        <p><a href="https://docs.google.com/document/d/1nEra43EU7hfeLXiHfMzoFt7v4oUIbqYod3FVUfS8fxU/edit?usp=sharing" target="_blank">Home Assignment 4: Email Marketing</a></p>
+        <p><a href="https://docs.google.com/document/d/1enqeL85D7QEsO8nqJPE1Bz9l4HZ2HQGX-lMb5jPqa1U/edit?usp=sharing" target="_blank">Home Assignment 5: Product Analytics</a></p>
+    </div>
+</section>
+
+<section class="slide">
+    <div>
+        <h2>Result Submission</h2>
+        <ol>
+            <li>Put your solution into a Google Docs document</li>
+            <li>Share a link with Igor Lukanin via <a href="mailto:mail@igor.lukanin.name" target="_blank">email</a></li>
+            <li>Get his feedback & a <i>secret gift</i> :)</li>
+        </ol>
+        <p>Submission deadline is 23:59 YEKT on October 18, 2015</p>
+    </div>
+</section>
+
+<section class="slide" id="contact">
+    <div>
+        <h2>Afterword</h2>
+        <p>Thanks for your time.<br>Thanks to the amazing team at <a href="https://twitter.com/hhariri/lists/jetbrains" target="_blank">JetBrains</a></p>
+        <p>Follow me on Twitter: <a href="https://twitter.com/igorlukanin" target="_blank">@igorlukanin</a>
+            <br>Contact me via email: <a href="mailto:mail@igor.lukanin.name" target="_blank">mail@igor.lukanin.name</a>
+            <br>Fork this talk on <a href="https://github.com/igorlukanin/jetbrains-product-marketing" target="_blank">GitHub</a></p>
+    </div>
+</section>
+
+<p class="badge"><a href="https://github.com/igorlukanin/jetbrains-product-marketing" target="_blank">Fork me on GitHub</a></p>
 
 <div class="progress">
     <div></div>
